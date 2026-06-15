@@ -1,30 +1,41 @@
 # AIPC | 大模型自动化评测系统
 
+<p align="left">
+  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/FastAPI-005571?style=flat-square&logo=fastapi" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/MySQL-00758F?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
+  <img src="https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white" alt="Celery" />
+  <img src="https://img.shields.io/badge/Ant%20Design-1890FF?style=flat-square&logo=antdesign&logoColor=white" alt="Ant Design" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License" />
+</p>
+
 AIPC (AI Performance & Capability Evaluation System) 是一款面向企业与研发团队的 **大语言模型自动化评测与分析平台**。系统支持多种云端 API 与本地部署模型的快速接入，提供客观题规则比对评分与主观题 AI 智能裁判评分，并通过多维度的可视化分析报表、延迟与吞吐量压测统计，提供一站式、可量化的模型选型与对比基准。
 
 ---
 
-## 🌟 核心特性
+## 🛠️ 核心特性
 
-- 🤖 **模型抽象与多提供商适配**
+- **模型抽象与多提供商适配**
   - 内置 OpenAI, Anthropic, DeepSeek, 阿里云通义千问, 月之暗面 (Kimi), Ollama 等模型适配器，并支持本地模型的连通性探测。
-- 📊 **多维度能力化评测**
+- **多维度能力化评测**
   - 支持能力维度化（如知识、推理、代码、安全、对话等），并输出雷达图与能力对比排行榜。
-- ⚖️ **双重评分机制 (客观+AI裁判)**
+- **双重评分机制 (客观+AI裁判)**
   - 客观题规则自动打分（支持精确匹配、正则及包含模式）。
-  - 主观题 AI 裁判（LLM-as-a-Judge）智能评分，支持多裁判投票投票与答案位置随机打乱以消除偏见，同时提供详细的评分原因。
-- ✍️ **人工复核与修正**
+  - 主观题 AI 裁判（LLM-as-a-Judge）智能评分，支持多裁判投票与答案位置随机打乱以消除偏见，同时提供详细的评分原因。
+- **人工复核与修正**
   - 对评测结果提供人工打分及修正视图，记录审计日志，完美结合机器的高效与人工的精确。
-- ⚡ **性能与成本联合分析**
+- **性能与成本联合分析**
   - 记录首 Token 延迟 (TTFT)、总延迟、每秒 Token 数 (TPS)、每秒请求数 (Throughput)、错误率以及基于自定义费率的 Token 成本预算。
-- 📝 **离线判卷模式**
+- **离线判卷模式**
   - 支持本地 CSV 文件直接导入，批量对已生成的模型输出进行 AI 裁判评分。
-- 💬 **模型体验广场**
+- **模型体验广场**
   - 独立 Playground 界面，支持与多个已注册模型并行即时对话测试。
 
 ---
 
-## ⚙️ 技术栈
+## 📦 技术栈
 
 AIPC 采用现代前后端分离与异步任务队列架构，确保评测任务的大并发处理与系统响应的高速稳定。
 
